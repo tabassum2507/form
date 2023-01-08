@@ -18,13 +18,12 @@ const Form = (addInfo) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log(info)
-        addInfo(info)
-        console.log(addInfo)
-        
+    
         setInfo({name: " ",
                   email: " ",
                 password: " "})
     }
+
 
     return(
         <div className="form">
