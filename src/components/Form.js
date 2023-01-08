@@ -18,6 +18,7 @@ const Form = (addInfo) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log(info)
+        addInfo(info)
     
         setInfo({name: " ",
                   email: " ",
@@ -31,17 +32,17 @@ const Form = (addInfo) => {
                 <h1>Register Here</h1>
                 <div className="name">
                     <label>Name</label>
-                    <input for="" type="text" id="name" name="name" placeholder="Tanuj" value={info.name} onChange={handleChange}></input>
+                    <input type="text" id="name" name="name" value={info.name} onChange={handleChange}></input>
                 </div>
 
                 <div className="email">
                     <label>Email</label>
-                    <input for="" type="email" id="email" name="email" placeholder="123@gmail.com" value={info.email} onChange={handleChange}></input>
+                    <input type="email" id="email" name="email" value={info.email} onChange={handleChange}></input>
                 </div>
 
                 <div className="password">
                     <label>Password</label>
-                    <input for="" type="password" id="password" name="password" value={info.password} onChange={handleChange}>
+                    <input type="password" id="password" name="password" value={info.password} onChange={handleChange}>
                     </input>
                 </div>
 
